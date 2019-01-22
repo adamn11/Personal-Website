@@ -2,15 +2,12 @@
 <html>
     <head>
         <title>{{ title }} - Adam Nguyen's Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     </head>
     <body>
-        <ul class="navbar">
-            <a href="/index">Home</a>
-            <a href="/index">Portfolio</a>
-            <a href="/index">CV</a>
-            <a href="/index">Contact</a>
-        </ul>
+        {% include 'includes/_navbar.html' %}
         <h1>Work in Progress</h1>
         {% block content %}{% endblock %}
+        <script scr="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     </body>
 </html>
